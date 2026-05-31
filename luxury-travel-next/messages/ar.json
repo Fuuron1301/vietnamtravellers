@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "صمّم رحلتك"
+  },
+  "home": {
+    "hero": "سفر فاخر بتصميم يناسب حياتك."
+  },
+  "header": {
+    "ourTours": "الوجهات",
+    "allStyles": "جميع الأنماط",
+    "aboutUs": "من نحن",
+    "contact": "اتصل بنا",
+    "search": {
+      "aria": "فتح البحث",
+      "title": "ابحث عن رحلتك",
+      "placeholder": "ابحث عن وجهة أو مسار أو أسلوب",
+      "submit": "بحث"
+    },
+    "language": {
+      "current": "اللغة الحالية",
+      "aria": "اختر اللغة",
+      "mobileAria": "محدد اللغة",
+      "title": "اللغة",
+      "description": "غيّر لغة الموقع. المحتوى غير المترجم يعود إلى الإنجليزية."
+    },
+    "menu": {
+      "open": "فتح القائمة",
+      "close": "إغلاق القائمة"
+    },
+    "closeToursMenu": "إغلاق قائمة الوجهات",
+    "closeStylesMenu": "إغلاق قائمة الأنماط",
+    "closeAboutMenu": "إغلاق قسم من نحن",
+    "selectDestination": "اختر الوجهة",
+    "destinationCategories": "فئات الوجهات",
+    "discoverAllDestinations": "اكتشف كل الوجهات",
+    "signatureStops": "محطات مميزة",
+    "exploreRoute": "استعرض المسار",
+    "browseAllStyles": "تصفح كل الأنماط",
+    "privateStyleAtlas": "أطلس الأنماط الخاص",
+    "allTravelStyles": "كل أنماط السفر",
+    "wheelHint": "مرّر أو اسحب للمعاينة",
+    "featuredStyle": "النمط المميز",
+    "aboutBrand": "عن العلامة",
+    "aboutTitle": "رحلات بعناية أدق",
+    "aboutIntro": "نصمّم كل رحلة حول المسافر: مسارات دقيقة، فنادق منتقاة، مرشدون موثوقون، ومساحة كافية لتشعر بالمكان.",
+    "contactTeam": "تواصل مع فريقنا",
+    "explore": "استكشف",
+    "mobilePrimaryNav": "التنقل الرئيسي على الجوال",
+    "viewAllStyles": "عرض كل الأنماط",
+    "tourSuffix": "جولات",
+    "otherServices": {
+      "title": "خدمات أخرى",
+      "closeMenu": "إغلاق قائمة الخدمات الأخرى",
+      "aria": "قائمة الخدمات الأخرى",
+      "eyebrow": "خدمات إضافية",
+      "heading": "إضافات مفيدة",
+      "intro": "أضف تفاصيل تسهل رحلتك الخاصة: سيارة، تذاكر، SIM، تأشيرة وطلبات تأجير.",
+      "cta": "اسأل فريقنا",
+      "items": {
+        "carRental": {
+          "label": "تأجير سيارة",
+          "description": "طلبات سيارة خاصة للتنقلات أو الاستخدام اليومي أو رحلات متعددة الأيام."
+        },
+        "busTrain": {
+          "label": "تذاكر الحافلة والقطار",
+          "description": "دعم التذاكر للمسارات المناسبة لخطة سفرك."
+        },
+        "simCard": {
+          "label": "شريحة SIM 5G",
+          "description": "اشتر شريحة SIM للسفر 5G عبر رابط Klook الخارجي."
+        },
+        "asiaVisa": {
+          "label": "تأشيرة آسيا",
+          "description": "افتح نموذج تسجيل التأشيرة المستوحى من تدفق Visa2Asia."
+        },
+        "bikeMotorbike": {
+          "label": "تأجير دراجة ودراجة نارية",
+          "description": "طلبات تأجير أثناء بناء موقع الشريك المخصص."
+        }
+      },
+      "countNote": "5 ?????? ???????",
+      "safeLinks": "???? ??????? ??????? ????? ?? ????? ????"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "اسم المستخدم أو البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "remember": "تذكرني",
+      "submit": "تسجيل الدخول",
+      "loggingIn": "جاري تسجيل الدخول...",
+      "pageTitle": "تسجيل الدخول",
+      "goToSite": "الانتقال إلى الموقع"
+    }
+  }
+}

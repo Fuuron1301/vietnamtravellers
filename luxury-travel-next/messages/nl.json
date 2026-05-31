@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Stel je reis samen"
+  },
+  "home": {
+    "hero": "Luxe reizen, afgestemd op jouw leven."
+  },
+  "header": {
+    "ourTours": "Bestemmingen",
+    "allStyles": "Alle stijlen",
+    "aboutUs": "Over ons",
+    "contact": "Contact",
+    "search": {
+      "aria": "Zoeken openen",
+      "title": "Zoek je reis",
+      "placeholder": "Zoek bestemming, route of stijl",
+      "submit": "Zoeken"
+    },
+    "language": {
+      "current": "Huidige taal",
+      "aria": "Taal kiezen",
+      "mobileAria": "Taalkeuze",
+      "title": "Taal",
+      "description": "Wijzig de taal van de site. Niet-vertaalde inhoud valt terug op Engels."
+    },
+    "menu": {
+      "open": "Menu openen",
+      "close": "Menu sluiten"
+    },
+    "closeToursMenu": "Bestemmingenmenu sluiten",
+    "closeStylesMenu": "Stijlen-menu sluiten",
+    "closeAboutMenu": "Over-ons-menu sluiten",
+    "selectDestination": "Bestemming kiezen",
+    "destinationCategories": "Bestemmingscategorieën",
+    "discoverAllDestinations": "Ontdek alle bestemmingen",
+    "signatureStops": "Kenmerkende stops",
+    "exploreRoute": "Route bekijken",
+    "browseAllStyles": "Alle stijlen bekijken",
+    "privateStyleAtlas": "Privaat stijlen-atlas",
+    "allTravelStyles": "Alle reisstijlen",
+    "wheelHint": "Hover of veeg om te bekijken",
+    "featuredStyle": "Uitgelichte stijl",
+    "aboutBrand": "Over het merk",
+    "aboutTitle": "Reizen met meer verfijning",
+    "aboutIntro": "We stemmen elke reis af op de reiziger: nauwkeurige routes, zorgvuldig gekozen hotels, betrouwbare gidsen en genoeg ruimte om de plek echt te voelen.",
+    "contactTeam": "Neem contact op met ons team",
+    "explore": "Verkennen",
+    "mobilePrimaryNav": "Mobiele hoofdnavigeatie",
+    "viewAllStyles": "Alle stijlen bekijken",
+    "tourSuffix": "tours",
+    "otherServices": {
+      "title": "Andere services",
+      "closeMenu": "Andere-servicesmenu sluiten",
+      "aria": "Andere-servicesmenu",
+      "eyebrow": "Aanvullende services",
+      "heading": "Handige extra's",
+      "intro": "Voeg praktische reisdetails toe: auto, tickets, SIM-kaart, visa en huurverzoeken.",
+      "cta": "Vraag ons team",
+      "items": {
+        "carRental": {
+          "label": "Autohuur",
+          "description": "Aanvragen voor privéauto, transfers, daggebruik of meerdaagse routes."
+        },
+        "busTrain": {
+          "label": "Bus- en treintickets",
+          "description": "Tickethulp voor routes die passen bij je reisplan."
+        },
+        "simCard": {
+          "label": "5G-simkaart",
+          "description": "Koop een 5G-reissim via onze externe Klook-partnerlink."
+        },
+        "asiaVisa": {
+          "label": "Azië-visum",
+          "description": "Open het visumformulier volgens de Visa2Asia-flow."
+        },
+        "bikeMotorbike": {
+          "label": "Fiets- en motorhuur",
+          "description": "Huurverzoeken terwijl de partnerwebsite wordt gebouwd."
+        }
+      },
+      "countNote": "5 concierge-extra?s",
+      "safeLinks": "Offici?le links openen veilig in een nieuw tabblad"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Gebruikersnaam of e-mailadres",
+      "password": "Wachtwoord",
+      "remember": "Onthoud mij",
+      "submit": "Inloggen",
+      "loggingIn": "Bezig met inloggen...",
+      "pageTitle": "Inloggen",
+      "goToSite": "Naar site"
+    }
+  }
+}

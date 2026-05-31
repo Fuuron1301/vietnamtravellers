@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Progetta il tuo viaggio"
+  },
+  "home": {
+    "hero": "Viaggi di lusso, modellati sulla tua vita."
+  },
+  "header": {
+    "ourTours": "Destinazioni",
+    "allStyles": "Tutti gli stili",
+    "aboutUs": "Chi siamo",
+    "contact": "Contatti",
+    "search": {
+      "aria": "Apri ricerca",
+      "title": "Cerca il tuo viaggio",
+      "placeholder": "Cerca destinazione, percorso o stile",
+      "submit": "Cerca"
+    },
+    "language": {
+      "current": "Lingua attuale",
+      "aria": "Scegli lingua",
+      "mobileAria": "Selettore lingua",
+      "title": "Lingua",
+      "description": "Cambia la lingua del sito. I contenuti non tradotti tornano all'inglese."
+    },
+    "menu": {
+      "open": "Apri menu",
+      "close": "Chiudi menu"
+    },
+    "closeToursMenu": "Chiudi menu destinazioni",
+    "closeStylesMenu": "Chiudi menu stili",
+    "closeAboutMenu": "Chiudi sezione chi siamo",
+    "selectDestination": "Seleziona destinazione",
+    "destinationCategories": "Categorie di destinazione",
+    "discoverAllDestinations": "Scopri tutte le destinazioni",
+    "signatureStops": "Tappe principali",
+    "exploreRoute": "Esplora il percorso",
+    "browseAllStyles": "Sfoglia tutti gli stili",
+    "privateStyleAtlas": "Atlante privato degli stili",
+    "allTravelStyles": "Tutti gli stili di viaggio",
+    "wheelHint": "Passa il cursore o scorri per l'anteprima",
+    "featuredStyle": "Stile in evidenza",
+    "aboutBrand": "Sul marchio",
+    "aboutTitle": "Viaggi curati con più attenzione",
+    "aboutIntro": "Costruiamo ogni viaggio attorno a chi viaggia: itinerari precisi, hotel curati, guide affidabili e spazio sufficiente per sentire il luogo.",
+    "contactTeam": "Contatta il nostro team",
+    "explore": "Esplora",
+    "mobilePrimaryNav": "Navigazione principale mobile",
+    "viewAllStyles": "Vedi tutti gli stili",
+    "tourSuffix": "tour",
+    "otherServices": {
+      "title": "Altri servizi",
+      "closeMenu": "Chiudi menu altri servizi",
+      "aria": "Menu altri servizi",
+      "eyebrow": "Servizi aggiuntivi",
+      "heading": "Extra utili",
+      "intro": "Aggiungi la logistica che rende più semplice il viaggio privato: auto, biglietti, SIM, visto e noleggi.",
+      "cta": "Chiedi al team",
+      "items": {
+        "carRental": {
+          "label": "Noleggio auto",
+          "description": "Richieste per auto privata, trasferimenti, uso giornaliero o itinerari di più giorni."
+        },
+        "busTrain": {
+          "label": "Biglietti bus e treno",
+          "description": "Supporto biglietti per tratte coerenti con il tuo viaggio."
+        },
+        "simCard": {
+          "label": "SIM 5G",
+          "description": "Acquista una SIM 5G tramite il link esterno Klook."
+        },
+        "asiaVisa": {
+          "label": "Visto Asia",
+          "description": "Apri il modulo visto ispirato al flusso Visa2Asia."
+        },
+        "bikeMotorbike": {
+          "label": "Noleggio bici e moto",
+          "description": "Richieste di noleggio mentre il sito partner dedicato è in costruzione."
+        }
+      },
+      "countNote": "5 extra concierge",
+      "safeLinks": "I link ufficiali si aprono in una nuova scheda"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Nome utente o email",
+      "password": "Password",
+      "remember": "Ricordami",
+      "submit": "Accedi",
+      "loggingIn": "Accesso in corso...",
+      "pageTitle": "Accedi",
+      "goToSite": "Vai al sito"
+    }
+  }
+}

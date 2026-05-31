@@ -1,0 +1,99 @@
+﻿TỔNG HỢP SOURCE luxury-travel-next
+Ngày tổng hợp: 03/05/2026
+
+1. Mục tiêu dự án
+- Đây là frontend Next.js cho hệ thống du lịch luxury/headless CMS.
+- WordPress đóng vai trò CMS/admin, Next.js lấy dữ liệu qua REST API để render website public.
+- Trọng tâm là các trang SEO hub quốc gia, tour luxury, cruise, blog và form tailor-made để nhận lead.
+
+2. Nền tảng kỹ thuật đã có
+- Next.js 16, React 18, TypeScript, Tailwind CSS.
+- App Router với static/dynamic routes cho trang chủ, hub quốc gia, tour detail, cruise detail, blog và contact.
+- Framer Motion cho chuyển động UI, Three.js/@react-three/fiber cho lớp hero cinematic/3D.
+- Zod, react-hook-form, Nodemailer, Prisma client, next-intl và các script kiểm tra production.
+
+3. Các trang public đã làm được
+- Trang chủ `/` với hero, destination mosaic, featured tours, journey flow, testimonial, blog preview và final CTA.
+- Hub quốc gia:
+  - `/vietnam-tours/`
+  - `/thailand-tours/`
+  - `/cambodia-tours/`
+  - `/laos-tours/`
+  - `/multi-country-tours/`
+- Trang tour detail theo slug, gồm route chung `/[tourSlug]/` và route theo từng hub như `/vietnam-tours/[tourSlug]/`.
+- Trang cruise list `/cruises/` và cruise detail `/cruise/[slug]/`.
+- Trang blog list `/blog/` và blog detail `/blog/[slug]/`.
+- Trang travel styles `/travel-styles/` và `/travel-styles/[slug]/`.
+- Trang tailor-made `/customize-your-trip/` và contact `/contact/`.
+- Có `robots.txt`, `sitemap.xml`, loading state, error page và not-found page.
+
+4. CMS và dữ liệu
+- `lib/cms.ts` đã kết nối luồng lấy dữ liệu từ `WORDPRESS_API_URL`.
+- `lib/validated-cms.ts` chuẩn hóa payload CMS trước khi render để tránh dữ liệu bẩn làm hỏng giao diện.
+- Có fallback data cho tours, cruises, posts, testimonials, travel styles và hubs trong `lib/fallback-data.ts`.
+- Có catalog tour được generate từ dữ liệu legal trong `data/generated-legal-tours.json`.
+- Có script mock CMS để test nội bộ khi chưa có WordPress thật.
+
+5. SEO và cấu trúc nội dung
+- Các hub quốc gia có title, intro, narrative, highlights, neighboring hubs và FAQ.
+- Có JSON-LD/structured data qua `components/seo/json-ld.tsx` và helper trong `lib/seo.ts`.
+- Có sitemap và robots được tạo trong App Router.
+- Route hub/tour được chuẩn hóa qua `lib/routing.ts`.
+
+6. Form, lead và booking
+- `TailorMadeForm` là form nhiều bước, có autosave localStorage, progress, animation và summary trước khi gửi.
+- API `/api/leads` nhận lead, validate bằng Zod, có rate limit, honeypot, reCAPTCHA optional và gửi email admin.
+- API `/api/payments/create` tạo booking ID, hỗ trợ payload VietQR, PayPal/VNPAY placeholder theo env, gửi email admin và email xác nhận khách.
+- API `/api/revalidate` cho WordPress gọi revalidate trang khi nội dung thay đổi, có secret bảo vệ.
+
+7. Thiết kế UI/UX đã có
+- Hệ thống typography cơ bản: Eyebrow, Heading, Lead, BodyText.
+- Layout primitives: Container, Section, Grid12.
+- Components chính: Header, Footer, TourCard, CruiseCard, TourCatalog, Accordion, CTAButton, MagneticButton, StickyCTA.
+- Các section homepage/hub: HeroSection, DestinationMosaic, FeaturedTours, JourneyFlow, WhyChooseUs, TestimonialCinema, BlogPreview, FinalCTA.
+- Tailwind config đã định nghĩa màu luxury: navy, ivory, gold, pearl, champagne; shadow, radius, font serif/sans và easing riêng.
+
+8. Hình ảnh và hero đã cải thiện
+- Đã thêm ảnh local cho hub quốc gia trong `public/images/hubs/`:
+  - Vietnam: Ha Long Bay
+  - Thailand: temple landmark
+  - Cambodia: Angkor Wat
+  - Laos: Kuang Si Falls
+  - Multi-country: Mekong/Indochina scene
+- Đã thêm ảnh destination cards trong `public/images/destinations/`.
+- `components/hub-page.tsx` đã map đúng ảnh riêng cho từng hub, tránh hero bị trùng nền.
+- `HeroSection` đã hỗ trợ `imagePosition` để căn crop ảnh đẹp hơn theo từng quốc gia.
+- `CinematicHeroLayer` và `WebGLFallback` đã nhận `imagePosition` để ảnh fallback cũng crop đúng.
+
+9. Các chỉnh sửa giao diện gần nhất
+- Hero hub đã được tăng contrast bằng overlay đậm hơn và radial overlay sau vùng chữ.
+- Subtitle hero đã được ép màu sáng để không bị `.ds-body` kéo về màu navy gây khó đọc.
+- Tiêu đề, subtitle và eyebrow hero đã được tăng kích thước, tăng độ đậm và thêm text-shadow để rõ hơn trên ảnh nền.
+- Destination mosaic/card đã được chỉnh để ảnh hiển thị rõ, bố cục đẹp hơn và dùng ảnh du lịch tương ứng từng quốc gia.
+
+10. Kiểm tra và script sẵn có
+- `npm run typecheck`: kiểm tra TypeScript.
+- `npm run lint`: kiểm tra ESLint.
+- `npm run build`: build production Next.js.
+- `npm run verify`: chạy governance check, typecheck, lint và build.
+- `npm run smoke:routes`: smoke test các route production.
+- `npm run mock:cms`: chạy mock CMS local.
+- `npm run tours:generate`: generate tour data legal.
+- `npm run tours:test`: test importer tour.
+
+11. Trạng thái verify gần nhất
+- Typecheck: pass.
+- Lint: pass.
+- Build production: pass.
+- Build có warning `WORDPRESS_API_URL missing` khi chưa cấu hình CMS thật. Đây là cảnh báo cấu hình môi trường, không phải lỗi build.
+
+12. Những phần cần cấu hình/hoàn thiện trước production
+- Cần cấu hình `.env.local` với `WORDPRESS_API_URL` để lấy dữ liệu CMS thật.
+- Cần cấu hình email SMTP để lead/booking gửi mail thật.
+- Cần cấu hình `NEXT_REVALIDATION_SECRET` cho webhook revalidate từ WordPress.
+- Nếu dùng reCAPTCHA, cần thêm `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` và secret tương ứng.
+- Nếu dùng payment thật, cần thêm thông tin VNPAY, VietQR, PayPal theo provider thực tế.
+- Nên chạy `npm run verify` trước khi deploy.
+
+13. Kết luận
+Source hiện đã là một frontend du lịch luxury khá đầy đủ: có route public, hub quốc gia, tour/cruise/blog, form tailor-made, API lead/booking, CMS integration, fallback data, SEO, sitemap, 3D/cinematic hero và bộ component UI. Các vấn đề hình ảnh hero bị trùng, ảnh không hiện rõ và chữ khó đọc trên nền ảnh đã được xử lý ở mức frontend.

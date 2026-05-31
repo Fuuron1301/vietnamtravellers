@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "여행을 맞춤 설계"
+  },
+  "home": {
+    "hero": "당신의 삶에 맞춘 럭셔리 여행."
+  },
+  "header": {
+    "ourTours": "여행지",
+    "allStyles": "모든 스타일",
+    "aboutUs": "회사 소개",
+    "contact": "문의",
+    "search": {
+      "aria": "검색 열기",
+      "title": "여정을 검색하세요",
+      "placeholder": "목적지, 루트 또는 스타일 검색",
+      "submit": "검색"
+    },
+    "language": {
+      "current": "현재 언어",
+      "aria": "언어 선택",
+      "mobileAria": "언어 선택기",
+      "title": "언어",
+      "description": "사이트 언어를 전환합니다. 번역되지 않은 콘텐츠는 영어로 표시됩니다."
+    },
+    "menu": {
+      "open": "메뉴 열기",
+      "close": "메뉴 닫기"
+    },
+    "closeToursMenu": "여행지 메뉴 닫기",
+    "closeStylesMenu": "스타일 메뉴 닫기",
+    "closeAboutMenu": "소개 메뉴 닫기",
+    "selectDestination": "목적지 선택",
+    "destinationCategories": "목적지 카테고리",
+    "discoverAllDestinations": "모든 목적지 보기",
+    "signatureStops": "대표 포인트",
+    "exploreRoute": "루트 보기",
+    "browseAllStyles": "모든 스타일 보기",
+    "privateStyleAtlas": "프라이빗 스타일 아틀라스",
+    "allTravelStyles": "모든 여행 스타일",
+    "wheelHint": "호버하거나 스와이프해서 미리보기",
+    "featuredStyle": "추천 스타일",
+    "aboutBrand": "브랜드 소개",
+    "aboutTitle": "더 섬세하게 설계한 여정",
+    "aboutIntro": "우리는 여행하는 사람을 중심으로 여정을 설계합니다. 정교한 동선, 세심한 호텔, 신뢰할 수 있는 가이드, 그리고 장소를 온전히 느낄 여유까지.",
+    "contactTeam": "팀에 문의",
+    "explore": "둘러보기",
+    "mobilePrimaryNav": "모바일 기본 내비게이션",
+    "viewAllStyles": "모든 스타일 보기",
+    "tourSuffix": "투어",
+    "otherServices": {
+      "title": "기타 서비스",
+      "closeMenu": "기타 서비스 메뉴 닫기",
+      "aria": "기타 서비스 메뉴",
+      "eyebrow": "추가 서비스",
+      "heading": "유용한 옵션",
+      "intro": "전용차, 티켓, SIM, 비자, 렌탈 요청까지 여행을 더 편하게 만드는 실무를 더하세요.",
+      "cta": "팀에 문의",
+      "items": {
+        "carRental": {
+          "label": "렌터카",
+          "description": "전용차, 이동, 일일 이용 또는 다일 루트 요청."
+        },
+        "busTrain": {
+          "label": "버스 & 기차 티켓",
+          "description": "여행 계획에 맞는 구간 티켓 지원."
+        },
+        "simCard": {
+          "label": "5G SIM 카드",
+          "description": "Klook 외부 파트너 링크로 5G 여행 SIM을 구매하세요."
+        },
+        "asiaVisa": {
+          "label": "아시아 비자",
+          "description": "Visa2Asia 주문 흐름을 참고한 비자 등록 폼을 엽니다."
+        },
+        "bikeMotorbike": {
+          "label": "자전거 & 오토바이 렌탈",
+          "description": "전용 파트너 사이트 구축 중의 렌탈 요청."
+        }
+      },
+      "countNote": "5?? ???? ?? ???",
+      "safeLinks": "?? ??? ? ??? ???? ????"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "사용자 이름 또는 이메일",
+      "password": "비밀번호",
+      "remember": "로그인 상태 유지",
+      "submit": "로그인",
+      "loggingIn": "로그인 중...",
+      "pageTitle": "로그인",
+      "goToSite": "사이트로 이동"
+    }
+  }
+}

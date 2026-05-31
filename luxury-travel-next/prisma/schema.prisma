@@ -1,0 +1,557 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum LeadStatus {
+  HOT
+  WARM
+  COLD
+}
+
+enum BookingStatus {
+  PENDING
+  PAID
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum AdminRoleKey {
+  ADMINISTRATOR
+  EDITOR
+  AUTHOR
+  CONTRIBUTOR
+}
+
+enum AdminUserStatus {
+  ACTIVE
+  DISABLED
+}
+
+enum DesignPresetStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+enum TemplateStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+enum ReusableBlockStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+enum BlockTemplateType {
+  PAGE
+  SECTION
+  HEADER
+  FOOTER
+  LOOP
+  SINGLE
+}
+
+enum CmsPostType {
+  POST
+  PAGE
+  TOUR
+  PRODUCT
+  CRUISE
+  STYLE
+}
+
+enum CmsPostStatus {
+  DRAFT
+  PUBLISHED
+  SCHEDULED
+  PRIVATE
+  TRASH
+}
+
+enum CmsMediaKind {
+  IMAGE
+  VIDEO
+  AUDIO
+  DOCUMENT
+  OTHER
+}
+
+enum CmsRevisionEntity {
+  POST
+  MENU
+  OPTION
+  BLOCK_TEMPLATE
+  REUSABLE_BLOCK
+}
+
+enum CmsOptionAutoload {
+  YES
+  NO
+}
+
+model Role {
+  id           String       @id @default(cuid())
+  key          AdminRoleKey @unique
+  name         String
+  capabilities String[]
+  users        User[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}
+
+model User {
+  id           String          @id @default(cuid())
+  email        String          @unique
+  username     String          @unique
+  displayName  String
+  passwordHash String
+  status       AdminUserStatus @default(ACTIVE)
+  roleId       String
+  role         Role            @relation(fields: [roleId], references: [id])
+  sessions     Session[]
+  posts        Post[]
+  mediaItems   Media[]
+  revisions    Revision[]
+  autosaves    Autosave[]
+  designPresetsCreated DesignPreset[] @relation("DesignPresetCreatedBy")
+  designPresetsUpdated DesignPreset[] @relation("DesignPresetUpdatedBy")
+  blockTemplatesCreated BlockTemplate[] @relation("BlockTemplateCreatedBy")
+  blockTemplatesUpdated BlockTemplate[] @relation("BlockTemplateUpdatedBy")
+  reusableBlocksCreated ReusableBlock[] @relation("ReusableBlockCreatedBy")
+  reusableBlocksUpdated ReusableBlock[] @relation("ReusableBlockUpdatedBy")
+  auditLogs    AuditLog[] @relation("AuditLogActor")
+  meta         UserMeta[]
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@index([roleId])
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Post {
+  id              String        @id @default(cuid())
+  postType        CmsPostType   @default(POST)
+  status          CmsPostStatus @default(DRAFT)
+  title           String
+  slug            String
+  excerpt         String        @default("")
+  content         String        @default("")
+  seoTitle        String        @default("")
+  seoDescription  String        @default("")
+  canonicalUrl    String        @default("")
+  authorId        String
+  featuredImageId String?
+  parentId        String?
+  menuOrder       Int           @default(0)
+  scheduledAt     DateTime?
+  publishedAt     DateTime?
+  trashedAt       DateTime?
+  author          User          @relation(fields: [authorId], references: [id])
+  featuredImage   Media?        @relation("PostFeaturedImage", fields: [featuredImageId], references: [id])
+  parent          Post?         @relation("PageHierarchy", fields: [parentId], references: [id])
+  children        Post[]        @relation("PageHierarchy")
+  categories      PostCategory[]
+  tags            PostTag[]
+  media           PostMedia[]
+  menuItems       MenuItem[]
+  revisions       Revision[]
+  autosaves       Autosave[]
+  tourMeta        TourMeta?
+  meta            PostMeta[]
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@unique([postType, slug])
+  @@index([postType, status])
+  @@index([authorId])
+  @@index([featuredImageId])
+  @@index([parentId])
+  @@index([publishedAt])
+}
+
+model Media {
+  id            String       @id @default(cuid())
+  fileName      String
+  originalName  String
+  mimeType      String
+  kind          CmsMediaKind @default(OTHER)
+  url           String       @unique
+  size          Int          @default(0)
+  width         Int?
+  height        Int?
+  altText       String       @default("")
+  caption       String       @default("")
+  description   String       @default("")
+  authorId      String
+  author        User         @relation(fields: [authorId], references: [id])
+  featuredPosts Post[]       @relation("PostFeaturedImage")
+  postLinks     PostMedia[]
+  meta          MediaMeta[]
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@index([authorId])
+  @@index([kind])
+}
+
+model Category {
+  id          String         @id @default(cuid())
+  name        String
+  slug        String         @unique
+  description String         @default("")
+  parentId    String?
+  parent      Category?      @relation("CategoryTree", fields: [parentId], references: [id])
+  children    Category[]     @relation("CategoryTree")
+  posts       PostCategory[]
+  meta        CategoryMeta[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([parentId])
+}
+
+model Tag {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String    @default("")
+  posts       PostTag[]
+  meta        TagMeta[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model PostMeta {
+  id        String   @id @default(cuid())
+  postId    String
+  key       String
+  value     Json
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([postId, key])
+  @@index([key])
+}
+
+model MediaMeta {
+  id        String   @id @default(cuid())
+  mediaId   String
+  key       String
+  value     Json
+  media     Media    @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([mediaId, key])
+  @@index([key])
+}
+
+model UserMeta {
+  id        String   @id @default(cuid())
+  userId    String
+  key       String
+  value     Json
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, key])
+  @@index([key])
+}
+
+model CategoryMeta {
+  id         String   @id @default(cuid())
+  categoryId String
+  key        String
+  value      Json
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([categoryId, key])
+  @@index([key])
+}
+
+model TagMeta {
+  id        String   @id @default(cuid())
+  tagId     String
+  key       String
+  value     Json
+  tag       Tag      @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([tagId, key])
+  @@index([key])
+}
+
+model PostCategory {
+  postId     String
+  categoryId String
+  assignedAt DateTime @default(now())
+  post       Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([postId, categoryId])
+  @@index([categoryId])
+}
+
+model PostTag {
+  postId     String
+  tagId      String
+  assignedAt DateTime @default(now())
+  post       Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  tag        Tag      @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([postId, tagId])
+  @@index([tagId])
+}
+
+model PostMedia {
+  postId    String
+  mediaId   String
+  role      String   @default("gallery")
+  sortOrder Int      @default(0)
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  media     Media    @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+
+  @@id([postId, mediaId, role])
+  @@index([mediaId])
+}
+
+model Menu {
+  id        String     @id @default(cuid())
+  name      String
+  slug      String     @unique
+  location  String     @default("")
+  items     MenuItem[]
+  revisions Revision[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  @@index([location])
+}
+
+model MenuItem {
+  id           String     @id @default(cuid())
+  menuId       String
+  parentId     String?
+  linkedPostId String?
+  label        String
+  url          String
+  target       String     @default("")
+  cssClasses   String[]
+  sortOrder    Int        @default(0)
+  menu         Menu       @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  parent       MenuItem?  @relation("MenuItemTree", fields: [parentId], references: [id])
+  children     MenuItem[] @relation("MenuItemTree")
+  linkedPost   Post?      @relation(fields: [linkedPostId], references: [id])
+
+  @@index([menuId])
+  @@index([parentId])
+  @@index([linkedPostId])
+}
+
+model Revision {
+  id         String            @id @default(cuid())
+  entityType CmsRevisionEntity
+  postId     String?
+  menuId     String?
+  optionId   String?
+  blockTemplateId String?
+  reusableBlockId String?
+  title      String            @default("")
+  snapshot   Json
+  authorId   String
+  author     User              @relation(fields: [authorId], references: [id])
+  post       Post?             @relation(fields: [postId], references: [id], onDelete: Cascade)
+  menu       Menu?             @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  option     Option?           @relation(fields: [optionId], references: [id], onDelete: Cascade)
+  blockTemplate BlockTemplate? @relation(fields: [blockTemplateId], references: [id], onDelete: Cascade)
+  reusableBlock ReusableBlock? @relation(fields: [reusableBlockId], references: [id], onDelete: Cascade)
+  createdAt  DateTime          @default(now())
+
+  @@index([entityType])
+  @@index([postId])
+  @@index([menuId])
+  @@index([optionId])
+  @@index([blockTemplateId])
+  @@index([reusableBlockId])
+  @@index([authorId])
+}
+
+model Autosave {
+  id        String   @id @default(cuid())
+  postId    String
+  authorId  String
+  snapshot  Json
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  author    User     @relation(fields: [authorId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([postId, authorId])
+  @@index([authorId])
+}
+
+model Option {
+  id        String            @id @default(cuid())
+  key       String            @unique
+  value     Json
+  autoload  CmsOptionAutoload @default(YES)
+  revisions Revision[]
+  createdAt DateTime          @default(now())
+  updatedAt DateTime          @updatedAt
+}
+
+model DesignPreset {
+  id          String              @id @default(cuid())
+  name        String
+  slug        String              @unique
+  status      DesignPresetStatus   @default(DRAFT)
+  tokens      Json
+  createdById String
+  updatedById String?
+  createdBy   User                @relation("DesignPresetCreatedBy", fields: [createdById], references: [id], onDelete: Restrict)
+  updatedBy   User?               @relation("DesignPresetUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+
+  @@index([status])
+  @@index([createdById])
+  @@index([updatedById])
+}
+
+model BlockTemplate {
+  id          String            @id @default(cuid())
+  name        String
+  slug        String            @unique
+  type        BlockTemplateType
+  status      TemplateStatus    @default(DRAFT)
+  blocks      Json
+  createdById String
+  updatedById String?
+  createdBy   User              @relation("BlockTemplateCreatedBy", fields: [createdById], references: [id], onDelete: Restrict)
+  updatedBy   User?             @relation("BlockTemplateUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  revisions   Revision[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  @@index([type])
+  @@index([status])
+  @@index([createdById])
+  @@index([updatedById])
+}
+
+model ReusableBlock {
+  id          String               @id @default(cuid())
+  name        String
+  slug        String               @unique
+  blockType   String
+  status      ReusableBlockStatus  @default(DRAFT)
+  content     Json
+  createdById String
+  updatedById String?
+  createdBy   User                 @relation("ReusableBlockCreatedBy", fields: [createdById], references: [id], onDelete: Restrict)
+  updatedBy   User?                @relation("ReusableBlockUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  revisions   Revision[]
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+
+  @@index([blockType])
+  @@index([status])
+  @@index([createdById])
+  @@index([updatedById])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String?
+  action     String
+  entityType String
+  entityId   String?
+  ipAddress  String?
+  userAgent  String?
+  before     Json?
+  after      Json?
+  metadata   Json?
+  actor      User?    @relation("AuditLogActor", fields: [actorId], references: [id], onDelete: SetNull)
+  createdAt  DateTime @default(now())
+
+  @@index([actorId])
+  @@index([entityType])
+  @@index([entityId])
+  @@index([action])
+}
+
+model CustomPostType {
+  id        String      @id @default(cuid())
+  type      CmsPostType @unique
+  slug      String      @unique
+  label     String
+  supports  String[]
+  settings  Json?
+  public    Boolean     @default(true)
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model TourMeta {
+  postId       String   @id
+  basePrice    Decimal?
+  currency     String   @default("USD")
+  duration     String   @default("")
+  availability String   @default("available")
+  gallery      Json?
+  itinerary    Json?
+  post         Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  updatedAt    DateTime @updatedAt
+}
+
+model LeadMirror {
+  id          String     @id @default(cuid())
+  wordpressId Int?
+  status      LeadStatus @default(WARM)
+  destination String
+  budget      String
+  email       String
+  payload     Json
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model BookingMirror {
+  id          String        @id @default(cuid())
+  bookingId   String        @unique
+  wordpressId Int?
+  status      BookingStatus @default(PENDING)
+  method      String
+  amount      Decimal
+  currency    String        @default("USD")
+  payload     Json
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}

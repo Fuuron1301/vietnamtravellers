@@ -1,0 +1,409 @@
+﻿{
+  "fallback": [
+    {
+      "url": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2400&q=88",
+      "alt": "Limestone islands and emerald water in northern Vietnam",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1528127269322-539801943592",
+      "license": "Unsplash License",
+      "width": 2400,
+      "height": 1600
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2400&q=88",
+      "alt": "Tropical beach with palm trees and calm blue water",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1500530855697-b586d89ba3ee",
+      "license": "Unsplash License",
+      "width": 2400,
+      "height": 1600
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=2400&q=88",
+      "alt": "River landscape with boats and green banks in Southeast Asia",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1559592413-7cec4d0cae2b",
+      "license": "Unsplash License",
+      "width": 2400,
+      "height": 1600
+    }
+  ],
+  "vietnam": [
+    {
+      "url": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Ha Long Bay limestone peaks from a boat deck",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1528127269322-539801943592",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Green highland valley at golden hour",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1500534314209-a25ddb2bd429",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    }
+  ],
+  "thailand": [
+    {
+      "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Clear tropical shoreline with white sand and turquoise sea",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1507525428034-b723cf961d3e",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Luxury resort pool beside tropical water",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1499793983690-e29da59ef1c2",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    }
+  ],
+  "cambodia": [
+    {
+      "url": "https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Ancient temple silhouette surrounded by trees",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1464817739973-0128fe77aaa1",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Historic temple architecture in warm tropical light",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1518548419970-58e3b4079ab2",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    }
+  ],
+  "laos": [
+    {
+      "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Quiet mountain landscape with soft morning haze",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1500534314209-a25ddb2bd429",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Forest valley and mountain layers in clear light",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1469474968028-56623f02e42e",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    }
+  ],
+  "multi-country": [
+    {
+      "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Traveler looking across a wide Southeast Asian landscape",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1488646953014-85cb44e25828",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2600&q=88",
+      "alt": "Elegant local dining table prepared for travelers",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1414235077428-338989a2e8c0",
+      "license": "Unsplash License",
+      "width": 2600,
+      "height": 1733
+    }
+  ],
+  "beach": [
+    {
+      "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Turquoise sea and white beach under a bright sky",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1507525428034-b723cf961d3e",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Palm trees leaning over a quiet sandy beach",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1500530855697-b586d89ba3ee",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "mountain": [
+    {
+      "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Layered mountain valley with forest and clear sky",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1469474968028-56623f02e42e",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Rice-green valley and mountain road in soft light",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1500534314209-a25ddb2bd429",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "heritage": [
+    {
+      "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Historic temple roofline and warm architecture details",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1518548419970-58e3b4079ab2",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Ancient stone temple surrounded by tropical trees",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1464817739973-0128fe77aaa1",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "mekong": [
+    {
+      "url": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Green river channel and small boats in tropical countryside",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1559592413-7cec4d0cae2b",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Slow travel moment beside a broad river landscape",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1488646953014-85cb44e25828",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "city": [
+    {
+      "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Refined table setting for a local food experience",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1414235077428-338989a2e8c0",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Traveler observing a city and river route from above",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1488646953014-85cb44e25828",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "luxury": [
+    {
+      "url": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Premium resort pool with tropical views",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1499793983690-e29da59ef1c2",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Quiet high-end beach escape with bright clear water",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1507525428034-b723cf961d3e",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "adventure": [
+    {
+      "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Open mountain landscape for soft adventure travel",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1469474968028-56623f02e42e",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "food": [
+    {
+      "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Prepared local meal for a culinary travel experience",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1414235077428-338989a2e8c0",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "family": [
+    {
+      "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Wide calm beach suitable for a family holiday",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1500530855697-b586d89ba3ee",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "honeymoon": [
+    {
+      "url": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Quiet pool villa atmosphere for a romantic escape",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1499793983690-e29da59ef1c2",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "wellness": [
+    {
+      "url": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Peaceful resort pool for spa and wellness travel",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1499793983690-e29da59ef1c2",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "culture": [
+    {
+      "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=2800&q=88",
+      "alt": "Heritage architecture for a culture-focused journey",
+      "provider": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/photo-1518548419970-58e3b4079ab2",
+      "license": "Unsplash License",
+      "width": 2800,
+      "height": 1867
+    }
+  ],
+  "india": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Taj_Mahal_(22595078173).jpg/3840px-Taj_Mahal_(22595078173).jpg",
+      "alt": "Taj Mahal at Agra — iconic white marble mausoleum and garden pool reflection",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(22595078173).jpg",
+      "license": "CC BY 2.0",
+      "width": 5184,
+      "height": 3456
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Taj_Mahal_Agra_DSC_0323.jpg/3840px-Taj_Mahal_Agra_DSC_0323.jpg",
+      "alt": "Taj Mahal full facade view from the main gateway, Agra, India",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Agra_DSC_0323.jpg",
+      "license": "CC BY-SA 4.0",
+      "width": 6000,
+      "height": 4000
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Amber_Fort_and_Palace_Jaipur_-_panoramio.jpg/3840px-Amber_Fort_and_Palace_Jaipur_-_panoramio.jpg",
+      "alt": "Amber Fort and palace complex overlooking Jaipur from the hillside, Rajasthan",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amber_Fort_and_Palace_Jaipur_-_panoramio.jpg",
+      "license": "CC BY 3.0",
+      "width": 5184,
+      "height": 3456
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Amer_Fort_(40316301741).jpg/3840px-Amer_Fort_(40316301741).jpg",
+      "alt": "Amer Fort fortifications and towers at the Jaipur city limits, Rajasthan",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amer_Fort_(40316301741).jpg",
+      "license": "CC BY 2.0",
+      "width": 4928,
+      "height": 3264
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Amber_fort_2016.jpg/3840px-Amber_fort_2016.jpg",
+      "alt": "Amber Fort entrance gate and decorated courtyard, Jaipur, Rajasthan",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amber_fort_2016.jpg",
+      "license": "CC BY-SA 4.0",
+      "width": 4608,
+      "height": 3456
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Jodhpur_01-2016_img21_Blue_City.jpg/3840px-Jodhpur_01-2016_img21_Blue_City.jpg",
+      "alt": "Jodhpur Blue City — blue-washed houses cascading below Mehrangarh Fort, Rajasthan",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jodhpur_01-2016_img21_Blue_City.jpg",
+      "license": "CC BY-SA 4.0",
+      "width": 4272,
+      "height": 2848
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Kerala_backwaters_houseboat.jpg/3840px-Kerala_backwaters_houseboat.jpg",
+      "alt": "Kerala houseboat gliding through the backwater canals near Alleppey",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_backwaters_houseboat.jpg",
+      "license": "CC BY-SA 3.0",
+      "width": 3840,
+      "height": 2560
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Varanasi_at_dusk.jpg/3840px-Varanasi_at_dusk.jpg",
+      "alt": "Varanasi Ganges ghats at dusk — temple spires and lamplight along the holy river",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varanasi_at_dusk.jpg",
+      "license": "CC BY-SA 3.0",
+      "width": 3840,
+      "height": 2560
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Taj_Mahal_in_winter_09.jpg/3840px-Taj_Mahal_in_winter_09.jpg",
+      "alt": "Taj Mahal in winter morning light with mist, Agra, India",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_winter_09.jpg",
+      "license": "CC BY-SA 3.0",
+      "width": 5134,
+      "height": 3423
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Amber_Fort,_Jaipur,_India_(21199626491).jpg/3840px-Amber_Fort,_Jaipur,_India_(21199626491).jpg",
+      "alt": "Amber Fort elephant path and ramparts with panoramic view of Jaipur valley",
+      "provider": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amber_Fort,_Jaipur,_India_(21199626491).jpg",
+      "license": "CC BY 2.0",
+      "width": 4288,
+      "height": 2848
+    }
+  ]
+}

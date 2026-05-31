@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Personnaliser votre voyage"
+  },
+  "home": {
+    "hero": "Voyage de luxe, pensé pour votre rythme."
+  },
+  "header": {
+    "ourTours": "Destinations",
+    "allStyles": "Tous les styles",
+    "aboutUs": "À propos",
+    "contact": "Contact",
+    "search": {
+      "aria": "Ouvrir la recherche",
+      "title": "Rechercher votre voyage",
+      "placeholder": "Rechercher une destination, un itinéraire ou un style",
+      "submit": "Rechercher"
+    },
+    "language": {
+      "current": "Langue actuelle",
+      "aria": "Choisir la langue",
+      "mobileAria": "Sélecteur de langue",
+      "title": "Langue",
+      "description": "Changez la langue du site. Les contenus non traduits restent en anglais."
+    },
+    "menu": {
+      "open": "Ouvrir le menu",
+      "close": "Fermer le menu"
+    },
+    "closeToursMenu": "Fermer le menu des destinations",
+    "closeStylesMenu": "Fermer le menu des styles",
+    "closeAboutMenu": "Fermer la section À propos",
+    "selectDestination": "Choisir une destination",
+    "destinationCategories": "Catégories de destinations",
+    "discoverAllDestinations": "Découvrir toutes les destinations",
+    "signatureStops": "Étapes phares",
+    "exploreRoute": "Découvrir l’itinéraire",
+    "browseAllStyles": "Parcourir tous les styles",
+    "privateStyleAtlas": "Atlas privé des styles",
+    "allTravelStyles": "Tous les styles de voyage",
+    "wheelHint": "Survolez ou glissez pour prévisualiser",
+    "featuredStyle": "Style vedette",
+    "aboutBrand": "À propos de la marque",
+    "aboutTitle": "Des voyages avec plus de soin",
+    "aboutIntro": "Nous construisons chaque voyage autour des voyageurs : itinéraires précis, hôtels soignés, guides de confiance et assez d'espace pour ressentir le lieu.",
+    "contactTeam": "Contacter l’équipe",
+    "explore": "Explorer",
+    "mobilePrimaryNav": "Navigation mobile principale",
+    "viewAllStyles": "Voir tous les styles",
+    "tourSuffix": "circuits",
+    "otherServices": {
+      "title": "Autres services",
+      "closeMenu": "Fermer le menu des autres services",
+      "aria": "Menu des autres services",
+      "eyebrow": "Services compl?mentaires",
+      "heading": "Extras utiles",
+      "intro": "Ajoutez les d?tails pratiques qui rendent un voyage priv? plus fluide: voiture, billets, SIM, visa et locations.",
+      "cta": "Demander ? notre ?quipe",
+      "items": {
+        "carRental": {
+          "label": "Location de voiture",
+          "description": "Demandes de voiture priv?e pour transferts, journ?e ou itin?raire prolong?."
+        },
+        "busTrain": {
+          "label": "Billets bus et train",
+          "description": "Assistance billets pour les trajets qui compl?tent votre voyage."
+        },
+        "simCard": {
+          "label": "Carte SIM 5G",
+          "description": "Achetez une SIM 5G via notre lien partenaire Klook."
+        },
+        "asiaVisa": {
+          "label": "Visa Asie",
+          "description": "Ouvrir le formulaire de visa inspir? du parcours Visa2Asia."
+        },
+        "bikeMotorbike": {
+          "label": "Location v?lo et moto",
+          "description": "Demandes de location pendant la construction du site partenaire d?di?."
+        }
+      },
+      "countNote": "5 services de conciergerie",
+      "safeLinks": "Les liens officiels s?ouvrent dans un nouvel onglet"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Identifiant ou e-mail",
+      "password": "Mot de passe",
+      "remember": "Se souvenir de moi",
+      "submit": "Se connecter",
+      "loggingIn": "Connexion...",
+      "pageTitle": "Se connecter",
+      "goToSite": "Retour au site"
+    }
+  }
+}

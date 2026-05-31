@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Ihre Reise gestalten"
+  },
+  "home": {
+    "hero": "Luxusreisen, auf Ihr Leben abgestimmt."
+  },
+  "header": {
+    "ourTours": "Reiseziele",
+    "allStyles": "Alle Stile",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt",
+    "search": {
+      "aria": "Suche öffnen",
+      "title": "Ihre Reise suchen",
+      "placeholder": "Ziel, Route oder Stil suchen",
+      "submit": "Suchen"
+    },
+    "language": {
+      "current": "Aktuelle Sprache",
+      "aria": "Sprache wählen",
+      "mobileAria": "Sprachauswahl",
+      "title": "Sprache",
+      "description": "Wechseln Sie die Sprache der Website. Nicht übersetzte Inhalte fallen auf Englisch zurück."
+    },
+    "menu": {
+      "open": "Menü öffnen",
+      "close": "Menü schließen"
+    },
+    "closeToursMenu": "Reiseziel-Menü schließen",
+    "closeStylesMenu": "Stil-Menü schließen",
+    "closeAboutMenu": "Über-Menü schließen",
+    "selectDestination": "Ziel wählen",
+    "destinationCategories": "Zielkategorien",
+    "discoverAllDestinations": "Alle Reiseziele entdecken",
+    "signatureStops": "Besondere Stationen",
+    "exploreRoute": "Route ansehen",
+    "browseAllStyles": "Alle Stile ansehen",
+    "privateStyleAtlas": "Privater Stil-Atlas",
+    "allTravelStyles": "Alle Reisestile",
+    "wheelHint": "Zum Vorschauen schweben oder wischen",
+    "featuredStyle": "Empfohlener Stil",
+    "aboutBrand": "Über die Marke",
+    "aboutTitle": "Reisen mit mehr Feingefühl",
+    "aboutIntro": "Wir gestalten jede Reise um die Reisenden herum: präzise Routen, sorgfältige Hotels, vertrauenswürdige Guides und genug Raum, um den Ort zu spüren.",
+    "contactTeam": "Unser Team kontaktieren",
+    "explore": "Entdecken",
+    "mobilePrimaryNav": "Mobile Hauptnavigation",
+    "viewAllStyles": "Alle Stile ansehen",
+    "tourSuffix": "Touren",
+    "otherServices": {
+      "title": "Weitere Services",
+      "closeMenu": "Menü für weitere Services schließen",
+      "aria": "Menü für weitere Services",
+      "eyebrow": "Zusatzservices",
+      "heading": "Nützliche Extras",
+      "intro": "Ergänzen Sie praktische Reisedetails: Auto, Tickets, SIM-Karte, Visa und Mietanfragen.",
+      "cta": "Team fragen",
+      "items": {
+        "carRental": {
+          "label": "Autovermietung",
+          "description": "Anfragen für private Wagen, Transfers, Tagesmiete oder mehrtägige Routen."
+        },
+        "busTrain": {
+          "label": "Bus- und Zugtickets",
+          "description": "Ticket-Unterstützung für Strecken innerhalb Ihrer Reiseplanung."
+        },
+        "simCard": {
+          "label": "5G-SIM-Karte",
+          "description": "5G-Reise-SIM über unseren externen Klook-Partnerlink kaufen."
+        },
+        "asiaVisa": {
+          "label": "Asien-Visum",
+          "description": "Visaformular nach dem Visa2Asia-Bestellablauf öffnen."
+        },
+        "bikeMotorbike": {
+          "label": "Fahrrad- und Motorradverleih",
+          "description": "Mietanfragen, während die dedizierte Partnerseite erstellt wird."
+        }
+      },
+      "countNote": "5 Concierge-Extras",
+      "safeLinks": "Offizielle Links ?ffnen sicher in einem neuen Tab"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Benutzername oder E-Mail-Adresse",
+      "password": "Passwort",
+      "remember": "Angemeldet bleiben",
+      "submit": "Anmelden",
+      "loggingIn": "Anmeldung...",
+      "pageTitle": "Anmelden",
+      "goToSite": "Zur Website"
+    }
+  }
+}

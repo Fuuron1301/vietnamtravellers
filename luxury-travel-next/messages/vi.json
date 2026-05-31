@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Thiết kế hành trình của bạn"
+  },
+  "home": {
+    "hero": "Du lịch sang trọng, tinh chỉnh theo nhịp sống của bạn."
+  },
+  "header": {
+    "ourTours": "Điểm đến",
+    "allStyles": "Tất cả phong cách",
+    "aboutUs": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "search": {
+      "aria": "Mở tìm kiếm",
+      "title": "Tìm hành trình của bạn",
+      "placeholder": "Tìm điểm đến, tuyến đường hoặc phong cách",
+      "submit": "Tìm kiếm"
+    },
+    "language": {
+      "current": "Ngôn ngữ hiện tại",
+      "aria": "Chọn ngôn ngữ",
+      "mobileAria": "Bộ chọn ngôn ngữ",
+      "title": "Ngôn ngữ",
+      "description": "Đổi ngôn ngữ của website. Nội dung chưa dịch sẽ tự về tiếng Anh."
+    },
+    "menu": {
+      "open": "Mở menu",
+      "close": "Đóng menu"
+    },
+    "closeToursMenu": "Đóng menu điểm đến",
+    "closeStylesMenu": "Đóng menu phong cách",
+    "closeAboutMenu": "Đóng mục giới thiệu",
+    "selectDestination": "Chọn điểm đến",
+    "destinationCategories": "Nhóm điểm đến",
+    "discoverAllDestinations": "Khám phá mọi điểm đến",
+    "signatureStops": "Điểm nhấn nổi bật",
+    "exploreRoute": "Xem lộ trình",
+    "browseAllStyles": "Xem tất cả phong cách",
+    "privateStyleAtlas": "Bản đồ phong cách riêng",
+    "allTravelStyles": "Tất cả phong cách du lịch",
+    "wheelHint": "Di chuột hoặc vuốt để xem trước",
+    "featuredStyle": "Phong cách nổi bật",
+    "aboutBrand": "Về thương hiệu",
+    "aboutTitle": "Hành trình được chăm chút hơn",
+    "aboutIntro": "Chúng tôi thiết kế từng hành trình quanh người đi: lộ trình chuẩn xác, khách sạn tinh tế, hướng dẫn viên tin cậy và đủ khoảng lặng để cảm trọn điểm đến.",
+    "contactTeam": "Liên hệ đội ngũ",
+    "explore": "Khám phá",
+    "mobilePrimaryNav": "Điều hướng chính trên mobile",
+    "viewAllStyles": "Xem tất cả phong cách",
+    "tourSuffix": "tour",
+    "otherServices": {
+      "title": "Dịch vụ khác",
+      "closeMenu": "Đóng menu dịch vụ khác",
+      "aria": "Menu dịch vụ khác",
+      "eyebrow": "Dịch vụ bổ sung",
+      "heading": "Tiện ích thêm",
+      "intro": "Bổ sung những phần hậu cần nhỏ giúp hành trình riêng tư dễ hơn: xe, vé, SIM, visa và thuê xe.",
+      "cta": "Hỏi đội ngũ",
+      "items": {
+        "carRental": {
+          "label": "Thuê xe",
+          "description": "Gửi yêu cầu thuê xe riêng cho trung chuyển, thuê theo ngày hoặc nhiều ngày."
+        },
+        "busTrain": {
+          "label": "Vé xe buýt & tàu",
+          "description": "Hỗ trợ vé cho các tuyến phù hợp với lịch trình du lịch của bạn."
+        },
+        "simCard": {
+          "label": "SIM 5G",
+          "description": "Mua SIM du lịch 5G qua link đối tác Klook bên ngoài."
+        },
+        "asiaVisa": {
+          "label": "Visa Châu Á",
+          "description": "Mở form đăng ký visa theo luồng mẫu Visa2Asia."
+        },
+        "bikeMotorbike": {
+          "label": "Thuê xe đạp & xe máy",
+          "description": "Gửi yêu cầu thuê xe đạp hoặc xe máy trong khi website đối tác đang xây."
+        }
+      },
+      "countNote": "5 ti?n ?ch concierge",
+      "safeLinks": "Link ch?nh th?c m? an to?n trong tab m?i"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Tên đăng nhập hoặc email",
+      "password": "Mật khẩu",
+      "remember": "Ghi nhớ tôi",
+      "submit": "Đăng nhập",
+      "loggingIn": "Đang đăng nhập...",
+      "pageTitle": "Đăng nhập",
+      "goToSite": "Về trang web"
+    }
+  }
+}

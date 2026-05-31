@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "旅をカスタマイズ"
+  },
+  "home": {
+    "hero": "あなたの暮らしに寄り添うラグジュアリー旅。"
+  },
+  "header": {
+    "ourTours": "目的地",
+    "allStyles": "すべてのスタイル",
+    "aboutUs": "私たちについて",
+    "contact": "お問い合わせ",
+    "search": {
+      "aria": "検索を開く",
+      "title": "旅を探す",
+      "placeholder": "目的地、ルート、スタイルを検索",
+      "submit": "検索"
+    },
+    "language": {
+      "current": "現在の言語",
+      "aria": "言語を選ぶ",
+      "mobileAria": "言語セレクター",
+      "title": "言語",
+      "description": "サイトの言語を切り替えます。未翻訳の内容は英語にフォールバックします。"
+    },
+    "menu": {
+      "open": "メニューを開く",
+      "close": "メニューを閉じる"
+    },
+    "closeToursMenu": "目的地メニューを閉じる",
+    "closeStylesMenu": "スタイルメニューを閉じる",
+    "closeAboutMenu": "紹介メニューを閉じる",
+    "selectDestination": "目的地を選ぶ",
+    "destinationCategories": "目的地カテゴリー",
+    "discoverAllDestinations": "すべての目的地を見る",
+    "signatureStops": "見どころ",
+    "exploreRoute": "ルートを見る",
+    "browseAllStyles": "すべてのスタイルを見る",
+    "privateStyleAtlas": "プライベート・スタイル・アトラス",
+    "allTravelStyles": "すべての旅行スタイル",
+    "wheelHint": "ホバーまたはスワイプでプレビュー",
+    "featuredStyle": "注目のスタイル",
+    "aboutBrand": "ブランドについて",
+    "aboutTitle": "より丁寧に仕立てる旅",
+    "aboutIntro": "私たちは旅する人を中心に旅程を組み立てます。正確な導線、上質なホテル、信頼できるガイド、そして土地を味わう余白まで。",
+    "contactTeam": "チームに連絡",
+    "explore": "見る",
+    "mobilePrimaryNav": "モバイルの主要ナビゲーション",
+    "viewAllStyles": "すべてのスタイルを見る",
+    "tourSuffix": "ツアー",
+    "otherServices": {
+      "title": "その他サービス",
+      "closeMenu": "その他サービスメニューを閉じる",
+      "aria": "その他サービスメニュー",
+      "eyebrow": "追加サービス",
+      "heading": "便利なオプション",
+      "intro": "専用車、チケット、SIM、ビザ、レンタルなど、旅をよりスムーズにする手配です。",
+      "cta": "チームに相談",
+      "items": {
+        "carRental": {
+          "label": "レンタカー",
+          "description": "送迎、日利用、複数日の私人車手配のご依頼。"
+        },
+        "busTrain": {
+          "label": "バス・鉄道チケット",
+          "description": "旅程に合う区間のチケット手配サポート。"
+        },
+        "simCard": {
+          "label": "5G SIMカード",
+          "description": "Klookの外部パートナーリンクから5G旅行SIMを購入。"
+        },
+        "asiaVisa": {
+          "label": "アジアビザ",
+          "description": "Visa2Asiaの申込フローを参考にしたビザ登録フォームを開きます。"
+        },
+        "bikeMotorbike": {
+          "label": "自転車・バイクレンタル",
+          "description": "専用パートナーサイト構築中のレンタル依頼。"
+        }
+      },
+      "countNote": "5???????????????",
+      "safeLinks": "???????????????????"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "ユーザー名またはメールアドレス",
+      "password": "パスワード",
+      "remember": "ログイン状態を保存",
+      "submit": "ログイン",
+      "loggingIn": "ログイン中...",
+      "pageTitle": "ログイン",
+      "goToSite": "サイトへ戻る"
+    }
+  }
+}

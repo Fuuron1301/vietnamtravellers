@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "定制您的旅程"
+  },
+  "home": {
+    "hero": "奢华旅行，贴合您的生活节奏。"
+  },
+  "header": {
+    "ourTours": "目的地",
+    "allStyles": "全部风格",
+    "aboutUs": "关于我们",
+    "contact": "联系",
+    "search": {
+      "aria": "打开搜索",
+      "title": "搜索您的旅程",
+      "placeholder": "搜索目的地、线路或风格",
+      "submit": "搜索"
+    },
+    "language": {
+      "current": "当前语言",
+      "aria": "选择语言",
+      "mobileAria": "语言选择器",
+      "title": "语言",
+      "description": "切换网站语言。未翻译内容将回退为英文。"
+    },
+    "menu": {
+      "open": "打开菜单",
+      "close": "关闭菜单"
+    },
+    "closeToursMenu": "关闭目的地菜单",
+    "closeStylesMenu": "关闭风格菜单",
+    "closeAboutMenu": "关闭关于菜单",
+    "selectDestination": "选择目的地",
+    "destinationCategories": "目的地分类",
+    "discoverAllDestinations": "发现全部目的地",
+    "signatureStops": "特色亮点",
+    "exploreRoute": "查看线路",
+    "browseAllStyles": "浏览全部风格",
+    "privateStyleAtlas": "私人风格图集",
+    "allTravelStyles": "全部旅行风格",
+    "wheelHint": "悬停或滑动预览",
+    "featuredStyle": "精选风格",
+    "aboutBrand": "关于品牌",
+    "aboutTitle": "更讲究的旅程",
+    "aboutIntro": "我们围绕每位旅客来设计旅程：路线精准、酒店考究、向导可靠，并留出足够空间去感受目的地。",
+    "contactTeam": "联系团队",
+    "explore": "探索",
+    "mobilePrimaryNav": "移动端主导航",
+    "viewAllStyles": "查看全部风格",
+    "tourSuffix": "行程",
+    "otherServices": {
+      "title": "其他服务",
+      "closeMenu": "关闭其他服务菜单",
+      "aria": "其他服务菜单",
+      "eyebrow": "附加服务",
+      "heading": "实用配套",
+      "intro": "补充让私人旅程更顺畅的细节：用车、车票、SIM卡、签证和租车需求。",
+      "cta": "咨询团队",
+      "items": {
+        "carRental": {
+          "label": "租车",
+          "description": "提交私人用车、接送或多日路线需求。"
+        },
+        "busTrain": {
+          "label": "巴士和火车票",
+          "description": "为您的行程提供车票支持。"
+        },
+        "simCard": {
+          "label": "5G SIM卡",
+          "description": "通过我们的Klook外部合作链接购买5G旅行SIM卡。"
+        },
+        "asiaVisa": {
+          "label": "亚洲签证",
+          "description": "打开参考Visa2Asia流程的签证申请表。"
+        },
+        "bikeMotorbike": {
+          "label": "自行车和摩托车租赁",
+          "description": "在合作网站建设期间提交租赁需求。"
+        }
+      },
+      "countNote": "5???????",
+      "safeLinks": "??????????????"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "用户名或邮箱",
+      "password": "密码",
+      "remember": "记住我",
+      "submit": "登录",
+      "loggingIn": "登录中...",
+      "pageTitle": "登录",
+      "goToSite": "返回网站"
+    }
+  }
+}

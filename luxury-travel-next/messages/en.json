@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Customize Your Trip"
+  },
+  "home": {
+    "hero": "Luxury travel, shaped around your life."
+  },
+  "header": {
+    "ourTours": "Destinations",
+    "allStyles": "All Styles",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "search": {
+      "aria": "Open search",
+      "title": "Search your journey",
+      "placeholder": "Search destination, route, or style",
+      "submit": "Search"
+    },
+    "language": {
+      "current": "Current language",
+      "aria": "Choose language",
+      "mobileAria": "Language selector",
+      "title": "Language",
+      "description": "Switch the site language. Untranslated content falls back to English."
+    },
+    "menu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "closeToursMenu": "Close destinations menu",
+    "closeStylesMenu": "Close styles menu",
+    "closeAboutMenu": "Close about menu",
+    "selectDestination": "Select destination",
+    "destinationCategories": "Destination categories",
+    "discoverAllDestinations": "Discover all destinations",
+    "signatureStops": "Signature stops",
+    "exploreRoute": "Explore route",
+    "browseAllStyles": "Browse all styles",
+    "privateStyleAtlas": "Private style atlas",
+    "allTravelStyles": "All travel styles",
+    "wheelHint": "Hover or swipe to preview",
+    "featuredStyle": "Featured style",
+    "aboutBrand": "About the brand",
+    "aboutTitle": "Journeys with sharper care",
+    "aboutIntro": "We shape each journey around the people travelling: precise routing, thoughtful hotels, trusted guides and enough breathing room to feel the place.",
+    "contactTeam": "Contact our team",
+    "explore": "Explore",
+    "mobilePrimaryNav": "Mobile primary navigation",
+    "viewAllStyles": "View all styles",
+    "tourSuffix": "Tours",
+    "otherServices": {
+      "title": "Other Services",
+      "closeMenu": "Close other services menu",
+      "aria": "Other services menu",
+      "eyebrow": "Other services",
+      "heading": "Useful extras",
+      "intro": "Add the small logistics that make a private journey easier: cars, tickets, SIM cards, visa support and rental requests.",
+      "cta": "Ask our team",
+      "items": {
+        "carRental": {
+          "label": "Car Rental",
+          "description": "Private car rental requests for city transfers, day use or multi-day routing."
+        },
+        "busTrain": {
+          "label": "Bus & Train Ticket",
+          "description": "Ticket support for routes that fit your wider travel plan."
+        },
+        "simCard": {
+          "label": "Sim Card 5G",
+          "description": "Buy eSIM or physical SIM card for Vietnam and Asia travel."
+        },
+        "asiaVisa": {
+          "label": "Asia Visa",
+          "description": "Open the visa registration form inspired by the Visa2Asia order flow."
+        },
+        "bikeMotorbike": {
+          "label": "Bike & Motorbike Rental",
+          "description": "Bike and motorbike rental requests while the dedicated partner site is being built."
+        }
+      },
+      "countNote": "5 concierge add-ons",
+      "safeLinks": "Official links open safely in a new tab"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Username or email address",
+      "password": "Password",
+      "remember": "Remember me",
+      "submit": "Log in",
+      "loggingIn": "Logging in...",
+      "pageTitle": "Log in",
+      "goToSite": "Go to site"
+    }
+  }
+}

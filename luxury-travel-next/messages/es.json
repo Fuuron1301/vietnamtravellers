@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "customize": "Diseña tu viaje"
+  },
+  "home": {
+    "hero": "Viajes de lujo, hechos a tu medida."
+  },
+  "header": {
+    "ourTours": "Destinos",
+    "allStyles": "Todos los estilos",
+    "aboutUs": "Nosotros",
+    "contact": "Contacto",
+    "search": {
+      "aria": "Abrir búsqueda",
+      "title": "Busca tu viaje",
+      "placeholder": "Buscar destino, ruta o estilo",
+      "submit": "Buscar"
+    },
+    "language": {
+      "current": "Idioma actual",
+      "aria": "Elegir idioma",
+      "mobileAria": "Selector de idioma",
+      "title": "Idioma",
+      "description": "Cambia el idioma del sitio. El contenido no traducido vuelve al inglés."
+    },
+    "menu": {
+      "open": "Abrir menú",
+      "close": "Cerrar menú"
+    },
+    "closeToursMenu": "Cerrar menú de destinos",
+    "closeStylesMenu": "Cerrar menú de estilos",
+    "closeAboutMenu": "Cerrar sección de nosotros",
+    "selectDestination": "Elegir destino",
+    "destinationCategories": "Categorías de destino",
+    "discoverAllDestinations": "Descubrir todos los destinos",
+    "signatureStops": "Paradas destacadas",
+    "exploreRoute": "Ver ruta",
+    "browseAllStyles": "Ver todos los estilos",
+    "privateStyleAtlas": "Atlas privado de estilos",
+    "allTravelStyles": "Todos los estilos de viaje",
+    "wheelHint": "Pasa el cursor o desliza para previsualizar",
+    "featuredStyle": "Estilo destacado",
+    "aboutBrand": "Sobre la marca",
+    "aboutTitle": "Viajes pensados con más cuidado",
+    "aboutIntro": "Diseñamos cada viaje en torno a quienes viajan: rutas precisas, hoteles cuidados, guías de confianza y espacio suficiente para sentir el destino.",
+    "contactTeam": "Contacta a nuestro equipo",
+    "explore": "Explorar",
+    "mobilePrimaryNav": "Navegación principal móvil",
+    "viewAllStyles": "Ver todos los estilos",
+    "tourSuffix": "tours",
+    "otherServices": {
+      "title": "Otros servicios",
+      "closeMenu": "Cerrar menú de otros servicios",
+      "aria": "Menú de otros servicios",
+      "eyebrow": "Servicios adicionales",
+      "heading": "Extras útiles",
+      "intro": "Añade la logística que facilita el viaje privado: coche, billetes, SIM, visa y alquileres.",
+      "cta": "Consultar al equipo",
+      "items": {
+        "carRental": {
+          "label": "Alquiler de coche",
+          "description": "Solicitudes de coche privado para traslados, uso diario o rutas de varios días."
+        },
+        "busTrain": {
+          "label": "Billetes de bus y tren",
+          "description": "Soporte de billetes para rutas que encajan con tu viaje."
+        },
+        "simCard": {
+          "label": "Tarjeta SIM 5G",
+          "description": "Compra una SIM 5G mediante nuestro enlace externo de Klook."
+        },
+        "asiaVisa": {
+          "label": "Visa Asia",
+          "description": "Abrir el formulario de visa inspirado en el flujo de Visa2Asia."
+        },
+        "bikeMotorbike": {
+          "label": "Alquiler de bici y moto",
+          "description": "Solicitudes de alquiler mientras se construye el sitio del partner."
+        }
+      },
+      "countNote": "5 extras de concierge",
+      "safeLinks": "Los enlaces oficiales se abren en una pesta?a nueva"
+    }
+  },
+  "admin": {
+    "login": {
+      "username": "Nombre de usuario o correo",
+      "password": "Contraseña",
+      "remember": "Recuérdame",
+      "submit": "Iniciar sesión",
+      "loggingIn": "Iniciando sesión...",
+      "pageTitle": "Iniciar sesión",
+      "goToSite": "Ir al sitio"
+    }
+  }
+}

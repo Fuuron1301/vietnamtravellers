@@ -1,0 +1,20 @@
+{
+  "source": "BestPriceTravel public sitemap and tour detail pages",
+  "sourceUrl": "https://www.bestpricetravel.com/sitemap.xml",
+  "robotsUrl": "https://www.bestpricetravel.com/robots.txt",
+  "robotsAllowed": true,
+  "userAgent": "LuxuryTravelNextPublicTourImporter/1.0 (local catalog builder; public facts only)",
+  "scope": "public factual tour fields only; no third-party images, no long copied descriptions, no branding assets",
+  "importedAt": "2026-05-05T18:24:58.687Z",
+  "requestDelayMs": 125,
+  "concurrency": 3,
+  "total": 707,
+  "countryCounts": {
+    "thailand": 87,
+    "vietnam": 375,
+    "laos": 56,
+    "multi-country": 65,
+    "cambodia": 67,
+    "myanmar": 57
+  }
+}
